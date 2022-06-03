@@ -11,7 +11,7 @@ def print_arg(argv):
             print("{:d} arguments:".format(n))
         i = 1
         while i <= n:
-            print("{:d}: {:d}".format(i, argv[i]))
+            print("{:d}: {:s}".format(i, argv[i]))
             i += 1
 
 
