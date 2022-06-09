@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if not a_dictionary:
+    if a_dictionary.values():
+        max_value = max(a_dictionary.values())
+        for key in a_dictionary.keys():
+            if a_dictionary[key] == max_value:
+                return key
+            else:
+                continue
+    else:
         return None
-    return (max(a_dictionary, key=a_dictionary.get))
-
   
-  if __name__ == "__main__":
+if __name__ == "__main__":
     best_score(a_dictionary)
