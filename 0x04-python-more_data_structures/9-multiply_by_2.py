@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 
-def multiply_by_2(a_dictonary):
-    new_dict = a_dictionary.copy()
-    for k in new_dict.keys():
-        new_dict[k] *= 2
-    return new_dict
+#!/usr/bin/python3
+def multiply_by_2(a_dictionary):
+    new_dir = a_dictionary.copy()
+    list_keys = list(new_dir.keys())
+
+    for i in list_keys:
+        new_dir[i] *= 2
+
+    return (new_dir)
 
 
 if __name__ == "__main__":
